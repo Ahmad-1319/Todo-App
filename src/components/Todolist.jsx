@@ -15,7 +15,7 @@ const Todolist = () => {
 
   useEffect(() => {
     getTodos();
-  }, []);
+  }, [getTodos]);
 
   const addTask = () => {
     if (input.trim() === "") return;
